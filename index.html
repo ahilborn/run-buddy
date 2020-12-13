@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Run Buddy</title>
   </head>
   <body>
-    <!-- navigation -->
+    <!-- navigation tags- block level element -->
     <header> 
       <h1>
         <a href="/">RUN BUDDY</a>
       </h1>
       <nav>
-      <!--Unordered list elemnt -->
-        <ul>
-        <!--list item element-->    
+        <ul>  
           <li>
-          <!--Anchor element-->
             <a href="#what-we-do">What We Do</a>  
           </li>
           <li>
@@ -28,19 +25,21 @@
           <li>
             <a href="#reach-out">Reach Out</a> 
           </li>
+
         </ul>
       </nav>
     </header>
+    <!-- end navigation-->
 
     <!-- hero/jumbotron -->
     <section class="hero">
-      <div>
-        <div class="hero-cta">
+      <div class="hero-cta">
           <h2>Start Building Habits.</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero culpa commodi esse saepe dicta aliquam excepturi facilis modi perferendis recusandae voluptatibus nesciunt ipsam praesentium est, quaerat reprehenderit, ad pariatur!
           </p>
         </div>
+
         <div class="hero-form">
         <h3>Get Started Today</h3>
         <p>Fill out this form and one of our trainers will schedule a consult</p>
@@ -70,8 +69,9 @@
        </form>    
       </div>
     </section>
+    <!-- end header-->
 
-    <!-- "what we do" section -->
+    <!-- "what we do" start- <section> -->
     <section id="what-we-do" class="intro">
       <div class ="flex-row">
       <h2 class="section-title primary-border">
@@ -84,15 +84,15 @@
       </p>
       </div>
     </section>
+    <!--end "what we do"-->
 
-    <!-- "what you do" section-->
+    <!-- "what you do" section start-->
     <section id="what-you-do" class="steps">
       <div class="flex-row">
       <h2 class="section-title primary-border">
         What You Do
       </h2>
     </div>
-      <div>
       <div class="step">
         <h3>Step 1.</h3>
         <div class="step-info">
@@ -105,37 +105,58 @@
       </div>
      </div>
     </div> 
-
-      <div>
-        <img src="./assets/images/step-2.svg" alt=""/>
-        <h3>Step 2:<span>Consult with One of Our Trainers.</span></h3>
-        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    <div class="step">
+      <h3>Step 2.</h3>
+      <div class="step-info">
+        <div class="step-img">
+          <img src="./assets/images/step-2.svg" alt=""/>
+        </div>  
+        <div class="step-text">
+          <h4>Consult With One Of Our Trainers</h4>
+          <p>Are you here to build muscle, lose weight, or just feel good?</p>
+        </div>
       </div>
-
-      <div>
+    </div>
+    <div class="step">
+      <h3>Step 3.</h3>
+      <div class="step-info">
+        <div class="step-img">
         <img src="./assets/images/step-3.svg" alt=""/>
-        <h3>Step 3:<span> Get Running.</span></h3>
-        <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
       </div>
-
-      <div>
-        <h3>Step 4:<span>See Results.</span> </h3>
-        <img src="./assets/images//step-4.svg" alt=""/>
+      <div class="step-text">
+        <h4>Get Running</h4>
+        <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+      </div>  
+     </div>
+    </div>
+    <div class="step"> 
+      <h3>Step 4.</h3>
+      <div class="step-info">
+        <img src="./assets/images/step-4.svg" alt="" />
+      </div> 
+      <div class="step-text">
+        <h4>See Results</h4>
         <p>Bi-weekly checkins with your trainer will keep you focused</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+<!--"what you do" end-->   
+       
 
-    <!-- "meet the trainers" section -->
-    <section id="your-trainers">
-      <div class="flex-row">
+    <!-- "meet the trainers" start -->
+  <section id="your-trainers">
+    <div class="flex-row">
       <h2 class="section-title primary-border">
         Meet The Trainers
       </h2>
-      </div>
-      <div>
+    </div>
+
+    <div class="trainers">
      <article class="trainer">
        <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
-         <h3 class="trainer-name">Arron Stephens</h3>
+       <div class="trainer-bio"> 
+          <h3 class="trainer-name">Arron Stephens</h3>
          <h4 class="trainer-role">Speed / Strength</h4>
          <p>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsam nisi illum sint quos, doloribus ipsa natus voluptatibus deserunt placeat libero vero fuga dignissimos voluptates dicta, quia optio aspernatur non!
@@ -146,31 +167,55 @@
      <!--second trainer bio-->
      <article class="trainer">
       <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
-         <h3 class= "trainer-name">Joanna Gill</h3>
-         <h4 class="trainer-role">Endurance</h4>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis aut eveniet nisi sint impedit. Est, enim. Minus alias, odit consectetur accusamus, esse eius non laudantium harum magni ipsam molestias?</p>
+      <div class="trainer-bio"> 
+        <h3 class= "trainer-name">Joanna Gill</h3>
+        <h4 class="trainer-role">Endurance</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque blanditiis aut eveniet nisi sint impedit. Est, enim. Minus alias, odit consectetur accusamus, esse eius non laudantium harum magni ipsam molestias?</p>
        </div>
-       
      </article>
 
      <!--third trainer bio-->
      <article class="trainer">
        <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-         <h3 class="trainer-name">Harry "the Headband" Smith</h3>
-         <h4 class="trainer-role">Strength</h4>
+       <div class="trainer-bio"> 
+        <h3 class="trainer-name">Harry "the Headband" Smith</h3>
+        <h4 class="trainer-role">Strength</h4>
          <p>
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, aperiam. Sint, dolores consequatur error incidunt obcaecati voluptas nam? Id placeat nesciunt porro, laudantium aliquid consequatur numquam voluptatem provident labore inventore?
          </p>
        </div>
      </article>
     </div>
-    </section>
+   </section>
+    <!--Meet the trainers end-->
 
     <!-- "reach out" section -->
     <section id="reach-out" class="contact">
-      <h2 class="section-title secondary-border"></h2>
-      <h2>Reach Out</h2>
+      <div class="flex row">
+        <h2 class="section-title secondary-border">
+        Reach Out
+        </h2>
+      </div>  
+
       <div class="contact-info">
+        <div>
+          <h3>Run Buddy</h3>
+          <p>
+            Any questions or concerns before signing up?
+            <br/>
+            Let us know and we'll be happy to talk to you!
+          </p>
+
+          <address>
+            55 Main Street <br/>
+            Some Town, Ca <br/>
+            12345<br/>
+            P: 555.RUN.BUDZ (555.786.2839)<br/>
+            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+          </address>
+
+        </div>
+
       <div class="contact-form">
         <h3>Contact Us</h3>
         <form>
@@ -183,40 +228,24 @@
           <button type="submit">Submit</button>
         </form>
       </div> 
-        <iframe
-         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13295.177265336366!2d-111.99933821649779!3d33.584689269091655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7307ac84286d%3A0x55d5d5a77876adcb!2s4202%20E%20Sahuaro%20Dr%2C%20Phoenix%2C%20AZ%2085028!5e0!3m2!1sen!2sus!4v1607488673630!5m2!1sen!2sus" 
-          frameborder="0" 
-          height="400"
-          width="400"
-          style="border:0;" 
-          allowfullscreen="" aria-hidden="false" tabindex="0"
-          >
-        </iframe>
-        <div>
-          <h3>Run Buddy</h3>
-            <p>
-              Any questions or concerns before signing up? <br /> Let us know and we'll be happy to talk to you!
-            </p>
-            <address>
-              55 Main Street <br/>
-              Some Town, CA <br/>
-              12345<br/>
-              P: 555.RUN.BUDZ (555.786.2839)<br/>
-              E: <a href="mailto:infor@runbuddy.io">info@runbuddy.io</a>
-            </address>
-        </div>
 
-      </div>
-    </section>
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13295.177265336366!2d-111.99933821649779!3d33.584689269091655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b7307ac84286d%3A0x55d5d5a77876adcb!2s4202%20E%20Sahuaro%20Dr%2C%20Phoenix%2C%20AZ%2085028!5e0!3m2!1sen!2sus!4v1607488673630!5m2!1sen!2sus" 
+        frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+    <div>
+  </section>  
+  <!---"reach out" end-->  
+          
     <!-- footer -->
     <footer>
       <h2>❤️ Made with love by Run Buddy.</h2>
-    <div>
-      <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
-      &copy; 2019 Run Buddy, Inc.
-    </div>
+      <div>
+        <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+        &copy; 2019 Run Buddy, Inc.
+      </div>
     </footer>
+    <!-- footer end-->
   </body>
 </html>  
 
